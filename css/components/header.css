@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #e6e6e6;
+  z-index: 30; }
+
+.burger--open {
+  border-bottom: none; }
+
+.header__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 87%; }
+
+.burger--open .header__wrapper {
+  width: 100%; }

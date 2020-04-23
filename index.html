@@ -9,6 +9,57 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<header class="header" id="header">
+    <div class="header__wrapper">
+        <div class="burger">
+            <div class="burger__wrapper">
+                <a class="burger__link-logo" href="index.html">
+                    <picture>
+                        <img src="img/logo--mobile.svg" class="header__logo" alt="header-logo">
+                    </picture>
+                </a>
 
+                <a class="burger__link-logo" href="index.html">
+                    <picture>
+                        <img src="img/logo-text--mobile.svg" class="header__text-logo" alt="header-text-logo">
+                    </picture>
+                </a>
+
+                <input class="burger__toggle" id="burger__toggle" type="checkbox">
+                <label class="burger__btn" for="burger__toggle">
+                    <span></span>
+                </label>
+            </div>
+        </div>
+
+        <nav class="navigation">
+            <a class="navigation__link" href="index.html">Главная</a>
+            <a class="navigation__link" href="">Каталог продукции</a>
+            <a class="navigation__link" href="">Подбор программы</a>
+        </nav>
+    </div>
+</header>
+
+<div class="banner">
+    <div class="banner-bg__wrapper">
+        <div class="banner-bg">
+            <picture>
+                <img src="img/index-banner-can--mobile.png" class="banner__can" alt="can">
+            </picture>
+        </div>
+    </div>
+
+    <section class="banner__wrapper">
+        <div class="banner__sub-wrapper">
+            <h2 class="banner__title">Функциональное <br> питание для котов</h2>
+            <h3 class="banner__subtitle">Занялся собой? Займись котом!</h3>
+        </div>
+
+        <button class="banner__button">подобрать программу</button>
+    </section>
+</div>
+
+
+<script src="js/script.js"></script>
 </body>
 </html>

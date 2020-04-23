@@ -1,0 +1,76 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 480px; }
+
+.banner-bg__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; }
+
+.banner-bg {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 440px;
+  height: 100%;
+  margin: 0 auto;
+  background: url("../../img/index-banner-bg--mobile.png") no-repeat;
+  background-size: contain; }
+
+.banner__can {
+  position: absolute;
+  margin: 0 auto;
+  right: 0;
+  bottom: 40px;
+  left: 0; }
+
+.banner__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 87%;
+  max-width: 440px;
+  margin: 0 auto;
+  z-index: 10;
+  padding-top: 25px; }
+
+.banner__sub-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; }
+
+.banner__title {
+  margin-bottom: 25px;
+  text-align: center;
+  font-family: "Oswald Regular", sans-serif;
+  font-size: 36px;
+  color: #ffffff; }
+
+.banner__subtitle {
+  text-align: center;
+  font-family: "Oswald Regular", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase; }
+
+.banner__button {
+  width: 100%;
+  height: 40px;
+  background: #24a92a;
+  border: none;
+  outline: none;
+  font-family: "Oswald Regular", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer; }
