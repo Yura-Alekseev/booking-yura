@@ -1,0 +1,62 @@
+.categories-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 266px;
+  background: #f2f2f2;
+  margin-top: 20px; }
+
+.categories-item__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 86%; }
+
+.categories-item__main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%; }
+
+.categories-item__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px; }
+
+.categories-item__header-icon {
+  margin-right: 20px; }
+
+.categories-item__title {
+  font-family: "Oswald Regular", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  color: #000000;
+  text-transform: uppercase; }
+
+.categories-item__text {
+  height: 90px;
+  margin-bottom: 18px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #444444; }
+
+.categories-item__separator {
+  width: 100%;
+  height: 1px;
+  margin-bottom: 18px;
+  background: #d9d9d9; }
+
+.categories-item__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 120px;
+  text-decoration: none; }
+
+.categories-item__link-title {
+  font-family: "Oswald Regular", sans-serif;
+  font-size: 16px;
+  color: #000000;
+  text-transform: uppercase; }
