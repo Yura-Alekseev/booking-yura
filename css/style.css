@@ -259,3 +259,39 @@
   font-size: 16px;
   color: #000000;
   text-transform: uppercase; }
+
+.title {
+  width: 100%;
+  margin: 30px 0 40px;
+  font-family: "Oswald Regular", sans-serif;
+  font-weight: normal;
+  font-size: 36px;
+  color: #000000; }
+
+.advantages {
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 20px; }
+
+.advantages-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px; }
+
+.advantages-item__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  background: #68b738; }
+
+.advantages-item__text {
+  width: 70%;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #444444;
+  line-height: 1.3; }
