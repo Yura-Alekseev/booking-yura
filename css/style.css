@@ -1,53 +1,27 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+*, *:after, *:before {
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
+  box-sizing: border-box; }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
+@font-face {
+  font-family: "Oswald Regular";
+  src: url("../fonts/Oswald-Regular.ttf"); }
 
 @font-face {
   font-family: "Oswald Medium";
   src: url("../fonts/Oswald-Medium.ttf"); }
 
-@font-face {
-  font-family: "Oswald Regular";
-  src: url("../fonts/Oswald-Regular.ttf"); }
+.content-section {
+  position: relative;
+  display: flex;
+  width: 100%; }
+
+.content-section__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 87%; }
 
 .header {
   display: flex;
@@ -61,13 +35,7 @@ table {
 .burger--open {
   border-bottom: none; }
 
-.header__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 87%; }
-
-.burger--open .header__wrapper {
+.burger--open .content-section__wrapper {
   width: 100%; }
 
 .burger {
@@ -156,9 +124,6 @@ table {
   text-decoration: none; }
 
 .banner {
-  display: flex;
-  flex-direction: column;
-  position: relative;
   height: 480px; }
 
 .banner-bg__wrapper {
@@ -188,23 +153,18 @@ table {
   bottom: 40px;
   left: 0; }
 
+.banner .content-section__wrapper {
+  justify-content: space-between;
+  max-width: 440px;
+  height: 100%; }
+
 .banner__wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  height: 100%;
-  width: 87%;
-  max-width: 440px;
+  width: 100%;
   margin: 0 auto;
-  z-index: 10;
   padding-top: 25px; }
-
-.banner__sub-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%; }
 
 .banner__title {
   margin-bottom: 25px;
@@ -221,13 +181,14 @@ table {
   text-transform: uppercase; }
 
 .banner__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 40px;
   background: #24a92a;
-  border: none;
-  outline: none;
   font-family: "Oswald Regular", sans-serif;
   font-size: 14px;
   color: #ffffff;
   text-transform: uppercase;
-  cursor: pointer; }
+  text-decoration: none; }

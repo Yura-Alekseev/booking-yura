@@ -10,11 +10,5 @@
 .burger--open {
   border-bottom: none; }
 
-.header__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 87%; }
-
-.burger--open .header__wrapper {
+.burger--open .content-section__wrapper {
   width: 100%; }

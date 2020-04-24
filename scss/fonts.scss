@@ -1,2 +1,9 @@
-@import "../fonts/Oswald-Medium.scss";
-@import "../fonts/Oswald-Regular.scss";
+@font-face {
+  font-family: "Oswald Regular";
+  src: url("../fonts/Oswald-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Oswald Medium";
+  src: url("../fonts/Oswald-Medium.ttf");
+}

@@ -1,7 +1,4 @@
 .banner {
-  display: flex;
-  flex-direction: column;
-  position: relative;
   height: 480px; }
 
 .banner-bg__wrapper {
@@ -31,23 +28,18 @@
   bottom: 40px;
   left: 0; }
 
+.banner .content-section__wrapper {
+  justify-content: space-between;
+  max-width: 440px;
+  height: 100%; }
+
 .banner__wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  height: 100%;
-  width: 87%;
-  max-width: 440px;
+  width: 100%;
   margin: 0 auto;
-  z-index: 10;
   padding-top: 25px; }
-
-.banner__sub-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%; }
 
 .banner__title {
   margin-bottom: 25px;
@@ -64,13 +56,14 @@
   text-transform: uppercase; }
 
 .banner__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 40px;
   background: #24a92a;
-  border: none;
-  outline: none;
   font-family: "Oswald Regular", sans-serif;
   font-size: 14px;
   color: #ffffff;
   text-transform: uppercase;
-  cursor: pointer; }
+  text-decoration: none; }
