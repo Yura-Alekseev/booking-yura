@@ -6,6 +6,11 @@
   height: 65px;
 }
 
+.burger--open {
+  height: auto;
+  border-bottom: none;
+}
+
 .burger--open .burger {
   border-bottom: 1px solid #e6e6e6;
 }
