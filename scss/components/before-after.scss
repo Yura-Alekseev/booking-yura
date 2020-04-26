@@ -1,0 +1,73 @@
+.before-after {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 35px;
+}
+
+.before-after__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 240px;
+  margin-bottom: 35px;
+}
+
+.before-after__cat-before {
+  display: flex;
+}
+
+.before-after__cat-after {
+  display: none;
+}
+
+.state--after .before-after__cat-before {
+  display: none;
+}
+
+.state--after .before-after__cat-after {
+  display: flex;
+}
+
+.before-after__switcher {
+  display: flex;
+  align-items: center;
+}
+
+.before-after__text {
+  font-family: "Oswald Regular", sans-serif;
+  font-size: 16px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.before-after__input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.before-after__input:checked ~ .before-after__capsule {
+  justify-content: flex-end;
+}
+
+.before-after__capsule {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 84px;
+  height: 14px;
+  margin: 0 20px;
+  padding: 3px 5px;
+  background: #ffffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 8px;
+}
+
+.before-after__toggle {
+  width: 35px;
+  height: 6px;
+  border-radius: 3px;
+  background: #68b738;
+}
