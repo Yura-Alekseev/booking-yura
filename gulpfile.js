@@ -4,7 +4,7 @@ var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 
 function css_style(done) {
-    gulp.src('./scss/**/*.scss')
+    gulp.src('./source/scss/**/*.scss')
         .pipe(sass({
             errorLogToConsole: true
         }))
@@ -16,9 +16,9 @@ function css_style(done) {
 }
 
 function watchFiles() {
-    gulp.watch("./scss/**/*", css_style);
+    gulp.watch("./source/scss/**/*", css_style);
     gulp.watch("./**/*.html", browserReload);
-    gulp.watch("./**/*.js", browserReload);
+    gulp.watch("./source/js/**/*", browserReload);
 }
 
 function sync(done) {
@@ -37,4 +37,4 @@ function browserReload(done) {
     done();
 }
 
-gulp.task('default', gulp.parallel(watchFiles, sync));
+gulp.task('default', gulp.parallel(css_style, watchFiles, sync));
