@@ -19,7 +19,7 @@ gulp.task('copy', function () {
 });
 
 gulp.task('css', function () {
-   return gulp.src('./source/scss/style.scss')
+    return gulp.src('./source/scss/style.scss')
         .pipe(sass({
             errorLogToConsole: true
         }))
