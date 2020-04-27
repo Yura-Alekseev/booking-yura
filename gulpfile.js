@@ -4,7 +4,7 @@ var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 
 function css_style(done) {
-    gulp.src('./source/scss/**/*.scss')
+    gulp.src('./source/scss/style.scss')
         .pipe(sass({
             errorLogToConsole: true
         }))
