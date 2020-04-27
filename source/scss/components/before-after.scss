@@ -36,9 +36,9 @@
 }
 
 .before-after__text {
-  font-family: "Oswald Regular", sans-serif;
+  font-family: $font-family-primary;
   font-size: 16px;
-  color: #000000;
+  color: $text-color-primary;
   text-transform: uppercase;
 }
 
@@ -60,7 +60,7 @@
   height: 14px;
   margin: 0 20px;
   padding: 3px 5px;
-  background: #ffffff;
+  background: $palette-bg-secondary;
   border: 1px solid #cdcdcd;
   border-radius: 8px;
   cursor: pointer;
@@ -70,5 +70,5 @@
   width: 35px;
   height: 6px;
   border-radius: 3px;
-  background: #68b738;
+  background: $palette-bg-tertiary;
 }

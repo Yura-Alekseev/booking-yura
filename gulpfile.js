@@ -1,40 +1,59 @@
 var gulp = require('gulp');
-var rename = require('gulp-rename');
 var sass = require('gulp-sass');
-var browserSync = require('browser-sync').create();
+var server = require('browser-sync').create();
+var del = require('del');
 
-function css_style(done) {
-    gulp.src('./source/scss/**/*.scss')
+gulp.task('clean', function () {
+    return del('./build/');
+});
+
+gulp.task('copy', function () {
+   return gulp.src([
+        "./source/fonts/**/*",
+        "./source/img/**",
+        "./source/js/**",
+    ], {
+        base: "./source/"
+    })
+       .pipe(gulp.dest("./build/"));
+});
+
+gulp.task('css', function () {
+   return gulp.src('./source/scss/style.scss')
         .pipe(sass({
             errorLogToConsole: true
         }))
         .on('error', console.error.bind(console))
-        .pipe(gulp.dest('./css/'))
-        .pipe(browserSync.stream());
+        .pipe(gulp.dest('./build/css/'))
+});
 
-    done();
-}
+gulp.task('html', function () {
+    return  gulp.src("./source/*.html")
+        .pipe(gulp.dest("./build/"));
+});
 
-function watchFiles() {
-    gulp.watch("./source/scss/**/*", css_style);
-    gulp.watch("./**/*.html", browserReload);
-    gulp.watch("./source/js/**/*", browserReload);
-}
-
-function sync(done) {
-    browserSync.init({
-        server: {
-            baseDir: "./"
-        },
+gulp.task('server', function () {
+    server.init({
+        server: "./build/",
         port: 3000
     });
+    gulp.watch("./source/scss/**/*.scss", gulp.series('css'));
+    gulp.watch("./source/*.html", gulp.series('html', 'refresh'));
+});
 
-    done()
-}
-
-function browserReload(done) {
-    browserSync.reload();
+gulp.task('refresh', function (done) {
+    server.reload();
     done();
-}
+});
 
-gulp.task('default', gulp.parallel(css_style, watchFiles, sync));
+gulp.task('build', gulp.series(
+    'clean',
+    'copy',
+    'css',
+    'html'
+));
+
+gulp.task("start", gulp.series('build', 'server'));
+
+
+

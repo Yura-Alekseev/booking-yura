@@ -12,13 +12,13 @@
   width: 60px;
   height: 60px;
   margin-right: 20px;
-  background: #68b738;
+  background: $palette-bg-tertiary;
 }
 
 .advantages-item__text {
   width: 70%;
-  font-family: Arial, sans-serif;
+  font-family: $font-family-secondary;
   font-size: 14px;
-  color: #444444;
+  color: $text-color-secondary;
   line-height: 1.3;
 }
