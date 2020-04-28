@@ -74,3 +74,17 @@
   top: 0;
   transform: rotate(90deg);
 }
+
+@media (min-width: 768px) {
+  .burger {
+    width: auto;
+  }
+
+  .burger__wrapper {
+    width: auto;
+  }
+
+  .burger__btn {
+    display: none;
+  }
+}

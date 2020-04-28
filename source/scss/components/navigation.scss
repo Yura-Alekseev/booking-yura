@@ -12,6 +12,7 @@
 
 .navigation__link {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -22,4 +23,27 @@
   color: $text-color-primary;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+  }
+
+  .navigation__link {
+    width: auto;
+    height: auto;
+    border-bottom: none;
+    font-family: $font-family-primary;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #222222;
+
+    &:hover {
+      box-shadow: 0 2px 0 0 rgba(105,183,56,1);
+    }
+  }
 }

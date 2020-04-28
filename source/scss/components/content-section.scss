@@ -11,3 +11,9 @@
   margin: 0 auto;
   width: 87%;
 }
+
+@media (min-width: 768px) {
+  .content-section__wrapper {
+    width: 92%;
+  }
+}

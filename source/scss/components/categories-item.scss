@@ -70,3 +70,70 @@
   color: $text-color-primary;
   text-transform: uppercase;
 }
+
+.categories-item__sub {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .categories-item {
+    height: 372px;
+    margin-top: 30px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .categories-item__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 88%;
+  }
+
+  .categories-item__main {
+    width: 55%;
+  }
+
+  .categories-item__header {
+    margin-bottom: 30px;
+  }
+
+  .categories-item__header-wrapper {
+    display: none;
+  }
+
+  .categories-item__title {
+    font-size: 36px;
+    color: $text-color-primary--tablet;
+  }
+
+  .categories-item__text {
+    height: 90px;
+    margin-bottom: 60px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .categories-item__separator {
+    display: none;
+  }
+
+  .categories-item__link {
+    width: 150px;
+  }
+
+  .categories-item__link-title {
+    font-size: 20px;
+    color: $text-color-primary--tablet;
+  }
+
+  .categories-item__sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 268px;
+  }
+}

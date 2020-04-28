@@ -1,7 +1,4 @@
 .advantages {
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
   padding-bottom: 20px;
 }
 
@@ -10,4 +7,16 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .advantages {
+    padding-bottom: 105px;
+  }
+
+  .advantages__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }

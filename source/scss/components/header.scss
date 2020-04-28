@@ -11,3 +11,17 @@
 .burger--open .content-section__wrapper {
   width: 100%;
 }
+
+@media (min-width: 768px) {
+  .header {
+    align-items: flex-end;
+    height: 80px;
+    border-bottom: none;
+  }
+
+  .header .content-section__wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

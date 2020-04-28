@@ -80,3 +80,52 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
+@media (min-width: 768px) {
+  .banner {
+    height: 870px;
+  }
+
+  .banner-bg {
+    max-width: unset;
+    background: $palette-bg-secondary;
+  }
+
+  .banner__can {
+    bottom: 0;
+  }
+
+  .banner .content-section__wrapper {
+    align-items: flex-start;
+    max-width: unset;
+    height: 280px;
+    padding-left: 90px;
+    margin-top: 60px;
+  }
+
+  .banner__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 0;
+  }
+
+  .banner__title {
+    margin-bottom: 40px;
+    text-align: left;
+    font-size: 60px;
+    color: $text-color-primary--tablet;
+  }
+
+  .banner__subtitle {
+    font-size: 20px;
+    color: $text-color-primary--tablet;
+  }
+
+  .banner__button {
+    width: 245px;
+    height: 52px;
+    font-size: 20px;
+  }
+
+}
