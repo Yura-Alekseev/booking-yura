@@ -1,0 +1,75 @@
+.before-after-slider {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .before-after-slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 768px;
+    height: 630px;
+    margin-top: 80px;
+    padding-bottom: 120px;
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 30%, #eaeaea 30%, #eaeaea 100%);
+  }
+
+  .before-after-slider__wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 30%, #f2f2f2 30%, #f2f2f2 100%);
+  }
+
+  .before-after-slider__image {
+    margin: 0 auto;
+    user-select: none;
+    box-sizing: border-box;
+  }
+
+  .before-after-slider__sub-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .before-after-slider__text {
+    font-family: $font-family-primary;
+    font-size: 20px;
+    color: $text-color-primary--tablet;
+    text-transform: uppercase;
+  }
+
+  .before-after-slider__input {
+    width: 428px;
+    height: 6px;
+    margin: 0 20px;
+    background: #dcdcdc;
+  }
+
+  .before-after-slider__input,
+  .before-after-slider__input::-webkit-slider-runnable-track,
+  .before-after-slider__input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+
+  .before-after-slider__input::-webkit-slider-thumb {
+    width: 36px;
+    height: 36px;
+    border:  1px solid #cdcdcd;
+    border-radius: 50%;
+    background: radial-gradient(circle, $palette-bg-tertiary  20%, $palette-bg-secondary 20%);
+    background-blend-mode: overlay;
+    padding: 1px 1px;
+    cursor: ew-resize;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  }
+}
+
