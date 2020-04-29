@@ -72,3 +72,9 @@
   border-radius: 3px;
   background: $palette-bg-tertiary;
 }
+
+@media (min-width: 768px) {
+  .before-after {
+    display: none;
+  }
+}

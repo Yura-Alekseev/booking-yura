@@ -67,3 +67,39 @@
   color: $text-color-secondary;
   text-decoration: none;
 }
+
+@media (min-width: 768px) {
+  .footer {
+    background: $palette-bg-primary;
+    height: 150px;
+  }
+
+  .footer .content-section__wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .footer__wrapper {
+    width: fit-content;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+
+  .footer__socials {
+    width: 125px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .footer__socials-wrapper {
+    width: 100%;
+  }
+
+  .footer__author {
+    width: 160px;
+  }
+}

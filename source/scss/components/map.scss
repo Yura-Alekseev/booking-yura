@@ -3,3 +3,9 @@
   height: 362px !important;
 }
 
+@media (min-width: 768px) {
+  .map div,
+  .map iframe {
+    height: 396px !important;
+  }
+}
