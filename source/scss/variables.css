@@ -1,0 +1,23 @@
+
+:root {
+    --x-color-light-gray: #f2f2f2;
+    --x-color-green: #68b738;
+    --x-color-white: #ffffff;
+    --x-color-black: #000000;
+    --x-color-gray: #444444;
+
+    --palette-bg-primary: var(--x-color-light-gray);
+    --palette-bg-secondary: var(--x-color-white);
+    --palette-bg-tertiary: var(--x-color-green);
+    --palette-bg-burger: var(--x-color-black);
+
+    --font-family-primary: "Oswald Regular", sans-serif;
+    --font-family-secondary: Arial, sans-serif;
+    --font-family-tertiary: "Oswald Medium", sans-serif;
+
+    --text-color-primary: var(--x-color-black);
+    --text-color-secondary: var(--x-color-gray);
+    --text-color-tertiary: var(--x-color-white);
+}
+
+

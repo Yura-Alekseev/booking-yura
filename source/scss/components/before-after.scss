@@ -36,9 +36,9 @@
 }
 
 .before-after__text {
-  font-family: $font-family-primary;
+  font-family: var(--font-family-primary);
   font-size: 16px;
-  color: $text-color-primary;
+  color: var(--text-color-primary);
   text-transform: uppercase;
 }
 
@@ -60,7 +60,7 @@
   height: 14px;
   margin: 0 20px;
   padding: 3px 5px;
-  background: $palette-bg-secondary;
+  background: var(--palette-bg-secondary);
   border: 1px solid #cdcdcd;
   border-radius: 8px;
   cursor: pointer;
@@ -70,5 +70,5 @@
   width: 35px;
   height: 6px;
   border-radius: 3px;
-  background: $palette-bg-tertiary;
+  background: var(--palette-bg-tertiary);
 }

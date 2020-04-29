@@ -37,7 +37,7 @@ gulp.task('server', function () {
         server: "./build/",
         port: 3000
     });
-    gulp.watch("./source/scss/**/*.scss", gulp.series('css'));
+    gulp.watch("./source/scss/**/*.scss", gulp.series('css', 'refresh'));
     gulp.watch("./source/*.html", gulp.series('html', 'refresh'));
 });
 

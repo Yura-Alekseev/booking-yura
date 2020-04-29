@@ -1,5 +1,5 @@
 .footer {
-  background: $palette-bg-primary;
+  background: var(--palette-bg-primary);
 }
 
 .footer .content-section__wrapper {
@@ -62,8 +62,8 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  font-family: $font-family-secondary;
+  font-family: var(--font-family-secondary);
   font-size: 16px;
-  color: $text-color-secondary;
+  color: var(--text-color-secondary);
   text-decoration: none;
 }
