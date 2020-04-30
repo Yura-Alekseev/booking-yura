@@ -12,14 +12,14 @@
   width: 60px;
   height: 60px;
   margin-right: 20px;
-  background: $palette-bg-tertiary;
+  background: var(--palette-bg-tertiary);
 }
 
 .advantages-item__text {
   width: 70%;
-  font-family: $font-family-secondary;
+  font-family: var(--font-family-secondary);
   font-size: 14px;
-  color: $text-color-secondary;
+  color: var(--text-color-secondary);
   line-height: 1.3;
 }
 
@@ -69,10 +69,10 @@
 
   .advantages-item__number {
     display: flex;
-    font-family: $font-family-primary;
+    font-family: var(--font-family-primary);
     font-weight: normal;
     font-size: 281px;
     line-height: 202px;
-    color: $x-color-light-gray;
+    color: var(--x-color-light-gray);
   }
 }

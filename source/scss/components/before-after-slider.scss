@@ -41,9 +41,9 @@
   }
 
   .before-after-slider__text {
-    font-family: $font-family-primary;
+    font-family: var(--font-family-primary);
     font-size: 20px;
-    color: $text-color-primary--tablet;
+    color: var(--text-color-primary--tablet);
     text-transform: uppercase;
   }
 
@@ -65,7 +65,7 @@
     height: 36px;
     border:  1px solid #cdcdcd;
     border-radius: 50%;
-    background: radial-gradient(circle, $palette-bg-tertiary  20%, $palette-bg-secondary 20%);
+    background: radial-gradient(circle, var(--palette-bg-tertiary)  20%, var(--palette-bg-secondary) 20%);
     background-blend-mode: overlay;
     padding: 1px 1px;
     cursor: ew-resize;

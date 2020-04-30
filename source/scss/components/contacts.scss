@@ -8,10 +8,10 @@
 .contacts__title {
   width: 50%;
   height: 70px;
-  font-family: $font-family-primary;
+  font-family: var(--font-family-primary);
   line-height: 1.4;
   font-size: 16px;
-  color: $text-color-primary;
+  color: var(--text-color-primary);
   text-transform: uppercase;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .contacts__address {
-  font-family: $font-family-secondary;
+  font-family: var(--font-family-secondary);
   font-style: normal;
   line-height: 1.7;
   font-size: 14px;
@@ -48,7 +48,7 @@
     height: 70px;
     line-height: 1.25;
     font-size: 20px;
-    color: $text-color-primary--tablet;
+    color: var(--text-color-primary--tablet);
   }
 
   .contacts__wrapper {

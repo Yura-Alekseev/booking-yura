@@ -1,6 +1,6 @@
 .results {
   padding-bottom: 40px;
-  background: $palette-bg-primary;
+  background: var(--palette-bg-primary);
 }
 
 .results__wrapper {
@@ -11,9 +11,9 @@
 
 .results__text {
   margin-bottom: 25px;
-  font-family: $font-family-secondary;
+  font-family: var(--font-family-secondary);
   font-size: 14px;
-  color: $text-color-secondary;
+  color: var(--text-color-secondary);
   line-height: 1.3;
 }
 
@@ -54,25 +54,25 @@
   justify-content: center;
   align-items: center;
   width: 87px;
-  background: $palette-bg-primary;
+  background: var(--palette-bg-primary);
 }
 
 .results__showing-title {
   width: 60px;
   text-align: center;
-  font-family: $font-family-secondary;
+  font-family: var(--font-family-secondary);
   font-size: 12px;
   line-height: 0.9;
-  color: $text-color-secondary;
+  color: var(--text-color-secondary);
 }
 
 .results__showing-value {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: $font-family-primary;
+  font-family: var(--font-family-primary);
   font-size: 24px;
-  color: $text-color-primary;
+  color: var(--text-color-primary);
   text-transform: uppercase;
 }
 
@@ -81,9 +81,9 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  font-family: $font-family-primary;
+  font-family: var(--font-family-primary);
   font-size: 14px;
-  color: $text-color-primary;
+  color: var(--text-color-primary);
   text-transform: uppercase;
 }
 
@@ -127,7 +127,7 @@
     right: 0;
     margin: 0 auto;
     width: fit-content;
-    background: $palette-bg-secondary;
+    background: var(--palette-bg-secondary);
   }
 
   .results__showing-title {
@@ -139,13 +139,13 @@
 
   .results__showing-value {
     font-size: 30px;
-    color: $text-color-primary--tablet;
+    color: var(--text-color-primary--tablet);
   }
 
   .results__showing-cost {
     width: 180px;
     text-align: right;
     font-size: 20px;
-    color: $text-color-primary--tablet;
+    color: var(--text-color-primary--tablet);
   }
 }
