@@ -1,11 +1,29 @@
-.map div,
-.map iframe {
+.map__wrapper div,
+.map__wrapper iframe {
   height: 362px !important;
 }
 
 @media (min-width: 768px) {
-  .map div,
-  .map iframe {
+  .map__wrapper div,
+  .map__wrapper iframe {
     height: 396px !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .map {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: var(--palette-bg-primary);
+  }
+
+  .map__wrapper div,
+  .map__wrapper iframe {
+    height: 400px !important;
   }
 }

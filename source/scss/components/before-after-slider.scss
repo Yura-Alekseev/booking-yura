@@ -52,6 +52,7 @@
     height: 6px;
     margin: 0 20px;
     background: #dcdcdc;
+    outline: none;
   }
 
   .before-after-slider__input,
@@ -73,3 +74,8 @@
   }
 }
 
+@media (min-width: 1400px) {
+  .before-after-slider {
+    margin-top: 0;
+  }
+}

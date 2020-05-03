@@ -15,3 +15,9 @@
     color: var(--text-color-primary--tablet);
   }
 }
+
+@media (min-width: 1024px) {
+  .title {
+    margin: 75px 0;
+  }
+}
