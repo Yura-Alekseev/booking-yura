@@ -137,3 +137,49 @@
     width: 268px;
   }
 }
+
+@media (min-width: 1024px) {
+  .categories-item {
+    height: 372px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .categories-item {
+    height: 372px;
+    margin-top: 0;
+    width: 46%;
+  }
+
+  .categories-item__wrapper {
+    width: 82%;
+  }
+
+  .categories-item__main {
+    width: 100%;
+  }
+
+  .categories-item__header {
+    margin-bottom: 30px;
+  }
+
+  .categories-item__header-wrapper {
+    display: flex;
+    width: 134px;
+    margin-right: 50px;
+  }
+
+  .categories-item__text {
+    height: 70px;
+    margin-bottom: 30px;
+  }
+
+  .categories-item__link {
+    width: 155px;
+  }
+
+  .categories-item__sub {
+    display: none;
+  }
+}

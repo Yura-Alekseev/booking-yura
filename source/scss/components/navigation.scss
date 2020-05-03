@@ -47,3 +47,20 @@
     }
   }
 }
+
+@media (min-width: 1024px) {
+  .navigation {
+    width: 40%;
+    min-width: 480px;
+  }
+
+  .navigation__link {
+    font-size: 20px;
+    line-height: 2;
+    color: var(--text-color-tertiary);
+
+    &:hover {
+      box-shadow: 0 2px 0 0 rgb(255, 255, 255);
+    }
+  }
+}

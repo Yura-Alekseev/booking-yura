@@ -24,6 +24,10 @@
   background-size: contain;
 }
 
+.banner-bg__image {
+  display: none;
+}
+
 .banner__can {
   position: absolute;
   margin: 0 auto;
@@ -126,5 +130,32 @@
     width: 245px;
     height: 52px;
     font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .banner {
+    height: 696px;
+    margin: -110px 0 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner-bg {
+    max-width: unset;
+    background: var(--palette-bg-secondary);
+  }
+
+  .banner-bg__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+  }
+
+  .banner__can {
+    bottom: 50px;
+    left: 240px;
   }
 }

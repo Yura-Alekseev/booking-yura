@@ -76,3 +76,33 @@
     color: var(--x-color-light-gray);
   }
 }
+
+@media (min-width: 1024px) {
+  .advantages-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 245px;
+    margin-bottom: 0;
+    margin-right: 80px;
+
+    &:first-child,
+    &:nth-child(2) {
+      margin-bottom: 140px;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .advantages-item {
+    margin-bottom: 0;
+    margin-right: 0;
+
+    &:first-child,
+    &:nth-child(2) {
+      margin-bottom: 0;
+    }
+  }
+}
+
