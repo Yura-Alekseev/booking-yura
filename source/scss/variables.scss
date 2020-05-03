@@ -1,0 +1,13 @@
+@import "palette";
+
+:root {
+    --font-family-primary: "Oswald Regular", sans-serif;
+    --font-family-secondary: Arial, sans-serif;
+    --font-family-tertiary: "Oswald Medium", sans-serif;
+
+    --text-color-primary: var(--x-color-black);
+    --text-color-secondary: var(--x-color-gray);
+    --text-color-tertiary: var(--x-color-white);
+}
+
+

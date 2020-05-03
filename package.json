@@ -1,0 +1,27 @@
+{
+  "name": "booking-yura",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "del": "^5.1.0"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yura-Alekseev/booking-yura.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yura-Alekseev/booking-yura/issues"
+  },
+  "homepage": "https://github.com/Yura-Alekseev/booking-yura#readme"
+}

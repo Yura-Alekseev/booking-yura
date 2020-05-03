@@ -1,0 +1,12 @@
+:root {
+  --x-color-light-gray: #f2f2f2;
+  --x-color-green: #68b738;
+  --x-color-white: #ffffff;
+  --x-color-black: #000000;
+  --x-color-gray: #444444;
+
+  --palette-bg-primary: var(--x-color-light-gray);
+  --palette-bg-secondary: var(--x-color-white);
+  --palette-bg-tertiary: var(--x-color-green);
+  --palette-bg-burger: var(--x-color-black);
+}
