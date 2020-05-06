@@ -83,11 +83,16 @@
 }
 
 @media (min-width: 1400px) {
+  .contacts {
+    width: 100vw;
+  }
+
   .contacts .content-section__wrapper {
     align-items: flex-start;
   }
 
   .contacts__main {
+    z-index: 20;
     padding: 65px 75px;
     width: 570px;
     background: var(--palette-bg-secondary);
