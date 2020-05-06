@@ -11,7 +11,7 @@
     height: 630px;
     margin-top: 80px;
     padding-bottom: 120px;
-    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 30%, #eaeaea 30%, #eaeaea 100%);
+    background: var(--gradient-gray);
   }
 
   .before-after-slider__wrapper {
@@ -21,7 +21,7 @@
     left: 0;
     width: 50%;
     overflow: hidden;
-    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 30%, #f2f2f2 30%, #f2f2f2 100%);
+    background: var(--gradient-light-gray);
   }
 
   .before-after-slider__image {
@@ -42,7 +42,7 @@
 
   .before-after-slider__text {
     font-family: var(--font-family-primary);
-    font-size: 20px;
+    font-size: var(--font-size-primary);
     color: var(--text-color-primary--tablet);
     text-transform: uppercase;
   }
@@ -61,8 +61,8 @@
   }
 
   .before-after-slider__input::-webkit-slider-thumb {
-    width: 36px;
-    height: 36px;
+    width: var(--thumb-size);
+    height: var(--thumb-size);
     border:  1px solid #cdcdcd;
     border-radius: 50%;
     background: radial-gradient(circle, var(--palette-bg-tertiary)  20%, var(--palette-bg-secondary) 20%);

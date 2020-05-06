@@ -145,7 +145,7 @@
   .results__showing-cost {
     width: 180px;
     text-align: right;
-    font-size: 20px;
+    font-size: var(--font-size-primary);
     color: var(--text-color-primary--tablet);
   }
 }

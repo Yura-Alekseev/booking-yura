@@ -7,8 +7,14 @@
 
   --x-color-light-black: #111111;
 
+  --x-color-darker-gray: #eaeaea;
+
+
   --palette-bg-primary: var(--x-color-light-gray);
   --palette-bg-secondary: var(--x-color-white);
   --palette-bg-tertiary: var(--x-color-green);
   --palette-bg-burger: var(--x-color-black);
+
+  --gradient-light-gray: linear-gradient(to bottom, var(--x-color-white) 0%, var(--x-color-white) 30%, var(--x-color-light-gray) 30%, var(--x-color-light-gray) 100%);
+  --gradient-gray: linear-gradient(to bottom, var(--x-color-white) 0%, var(--x-color-white) 30%, var(--x-color-darker-gray) 30%, var(--x-color-darker-gray) 100%);
 }

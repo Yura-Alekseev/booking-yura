@@ -118,13 +118,13 @@
   }
 
   .banner__subtitle {
-    font-size: 20px;
+    font-size: var(--font-size-primary--tablet);
     color: var(--text-color-primary--tablet);
   }
 
   .banner__button {
     width: 245px;
     height: 52px;
-    font-size: 20px;
+    font-size: var(--font-size-primary);
   }
 }
