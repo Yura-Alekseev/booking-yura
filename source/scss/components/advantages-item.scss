@@ -36,6 +36,11 @@
     width: 245px;
     margin-bottom: 0;
     margin-right: 80px;
+
+    &:first-child,
+    &:nth-child(2) {
+      margin-bottom: 140px;
+    }
   }
 
   .advantages-item__wrapper {
@@ -78,16 +83,20 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 245px;
+    width: 222px;
     margin-bottom: 0;
-    margin-right: 80px;
+    margin-right: 0;
+
+    &:first-child,
+    &:nth-child(2) {
+      margin-bottom: 0;
+    }
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   .advantages-item {
-    margin-bottom: 0;
-    margin-right: 0;
+    width: 245px;
   }
 }
 
