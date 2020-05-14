@@ -39,6 +39,13 @@
   font-size: 14px;
 }
 
+/*CATALOG*/
+
+.catalog .contacts {
+  background: var(--palette-bg-primary);
+}
+
+
 @media (min-width: 768px) {
   .contacts__main {
     padding: 65px 0;

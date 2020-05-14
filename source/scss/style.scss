@@ -9,7 +9,9 @@
 @import "source/scss/components/burger";
 @import "source/scss/components/navigation";
 
+@import "source/scss/components/button";
 @import "source/scss/components/banner";
+
 
 @import "source/scss/components/categories";
 @import "source/scss/components/categories-item";
@@ -28,3 +30,12 @@
 @import "source/scss/components/map";
 
 @import "source/scss/components/footer";
+
+
+/*Catalog*/
+
+@import "source/scss/components/products";
+@import "source/scss/components/products-item";
+
+@import "source/scss/components/ingredients";
+@import "source/scss/components/ingredients-item";

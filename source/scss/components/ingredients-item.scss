@@ -1,0 +1,45 @@
+.ingredients-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #cdcdcd;
+
+  &:first-child {
+    border-top: 1px solid #cdcdcd;
+  }
+}
+
+.ingredients-item__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 14px 0 17px;
+}
+
+.ingredients-item__title {
+  margin-bottom: 15px;
+  font-family: var(--font-family-primary);
+  font-size: 16px;
+  line-height: 1;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.ingredients-item__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.ingredients-item__subtitle {
+  margin-bottom: 15px;
+  font-family: var(--font-family-secondary);
+  font-size: 14px;
+  line-height: 1;
+  color: var(--text-color-secondary);
+}

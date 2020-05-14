@@ -12,6 +12,7 @@ gulp.task('copy', function () {
         "./source/fonts/**/*",
         "./source/img/**",
         "./source/js/**",
+        "./source/pages/**",
     ], {
         base: "./source/"
     })
@@ -28,7 +29,7 @@ gulp.task('css', function () {
 });
 
 gulp.task('html', function () {
-    return  gulp.src("./source/*.html")
+    return gulp.src("./source/**/*.html")
         .pipe(gulp.dest("./build/"));
 });
 
@@ -38,7 +39,7 @@ gulp.task('server', function () {
         port: 3000
     });
     gulp.watch("./source/scss/**/*.scss", gulp.series('css', 'refresh'));
-    gulp.watch("./source/*.html", gulp.series('html', 'refresh'));
+    gulp.watch("./source/**/*.html", gulp.series('html', 'refresh'));
 });
 
 gulp.task('refresh', function (done) {
