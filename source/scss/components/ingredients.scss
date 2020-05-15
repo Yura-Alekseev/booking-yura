@@ -1,5 +1,6 @@
 .ingredients {
   margin-bottom: 35px;
+  overflow: hidden;
 }
 
 .ingredients__header {
@@ -75,4 +76,63 @@
   font-size: 16px;
   line-height: 1.3;
   color: var(--text-color-tertiary);
+}
+
+@media (min-width: 768px) {
+  .ingredients {
+    margin-bottom: 75px;
+  }
+
+  .ingredients__title {
+    font-size: 36px;
+    margin: 30px 0 70px 30px;
+  }
+
+  .ingredients__title:before {
+    display: flex;
+    content: '';
+    position: absolute;
+    left: calc(-30px - 100%);
+    top: 4px;
+    border-bottom: 3px solid var(--palette-bg-tertiary);
+    height: 100%;
+    width: 100%;
+    transform: translateY(-50%);
+  }
+
+  .ingredients__title:after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 370px;
+    border-bottom: 3px solid var(--palette-bg-tertiary);
+    height: 100%;
+    width: 100%;
+    transform: translateY(-50%);
+  }
+
+  .ingredients__list {
+    margin-bottom: 70px;
+  }
+
+  .ingredients__banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 110px 0 90px;
+    width: 100%;
+    height: 200px;
+    background: url("../img/gift/gift-photo--tablet.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  .ingredients__banner-image {
+    margin-bottom: 0;
+  }
+
+  .ingredients__banner-text {
+    width: 170px;
+    text-align: left;
+  }
 }
