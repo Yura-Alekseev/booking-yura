@@ -63,4 +63,15 @@
       box-shadow: 0 2px 0 0 rgb(255, 255, 255);
     }
   }
+
+  .catalog .navigation__link {
+    font-family: var(--font-family-primary);
+    font-size: 20px;
+    line-height: 2;
+    color: var(--text-color-primary--tablet);
+
+    &:hover {
+      box-shadow: 0 2px 0 0 rgba(105,183,56,1);
+    }
+  }
 }

@@ -85,30 +85,16 @@
 
   .ingredients__title {
     font-size: 36px;
-    margin: 30px 0 70px 30px;
+    margin: 30px 0 70px 37px;
   }
 
   .ingredients__title:before {
     display: flex;
-    content: '';
-    position: absolute;
-    left: calc(-30px - 100%);
-    top: 4px;
-    border-bottom: 3px solid var(--palette-bg-tertiary);
-    height: 100%;
-    width: 100%;
-    transform: translateY(-50%);
+    left: calc(-37px - 100%);
   }
 
   .ingredients__title:after {
-    content: '';
-    position: absolute;
-    top: 4px;
     left: 370px;
-    border-bottom: 3px solid var(--palette-bg-tertiary);
-    height: 100%;
-    width: 100%;
-    transform: translateY(-50%);
   }
 
   .ingredients__list {
@@ -134,5 +120,51 @@
   .ingredients__banner-text {
     width: 170px;
     text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ingredients {
+    margin-bottom: 85px;
+  }
+
+  .ingredients__title {
+    font-size: 36px;
+    margin: 30px 0 70px;
+  }
+
+  .ingredients__title:before {
+    left: calc(-40px - 100%);
+  }
+
+  .ingredients__main {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .ingredients__list {
+    margin-bottom: 0;
+    width: 74%;
+  }
+
+  .ingredients__banner {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 65px 45px 45px;
+    width: 21%;
+    height: 289px;
+    background: url("../img/gift/gift-photo--desktop.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  .ingredients__banner-image {
+    margin-bottom: 0;
+  }
+
+  .ingredients__banner-text {
+    width: 170px;
+    text-align: center;
   }
 }
