@@ -1,0 +1,16 @@
+.form-profile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-profile__data {
+  margin-bottom: 9px;
+}
+
+.form-profile__type {
+  width: 100vw;
+  padding: 7px 0 20px;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
