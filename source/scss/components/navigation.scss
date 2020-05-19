@@ -64,7 +64,8 @@
     }
   }
 
-  .catalog .navigation__link {
+  .catalog .navigation__link,
+  .form-page .navigation__link {
     font-family: var(--font-family-primary);
     font-size: 20px;
     line-height: 2;

@@ -5,7 +5,7 @@
 }
 
 .form-profile__data {
-  margin-bottom: 9px;
+  margin-bottom: 23px;
 }
 
 .form-profile__type {
@@ -35,5 +35,31 @@
   .form-profile__type .form-section__wrapper {
     border: 1px solid #ededed;
     padding: 11px 27px 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .form-profile {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 83%;
+  }
+
+  .form-profile__data {
+    width: 47%;
+    margin-bottom: 0;
+  }
+
+  .form-profile__data .form-section__wrapper {
+    width: 100%;
+  }
+
+  .form-profile__type {
+    width: 47%;
+  }
+
+  .form-profile__type .form-section__wrapper {
+    width: 100%;
   }
 }

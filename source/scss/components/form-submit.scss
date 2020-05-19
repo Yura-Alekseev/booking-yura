@@ -37,3 +37,17 @@
     font-size: 16px;
   }
 }
+
+@media (min-width: 1024px) {
+  .form-submit {
+    margin-bottom: 80px;
+  }
+
+  .form-submit .button {
+    width: 47%;
+  }
+
+  .form-submit__title {
+    width: 47%;
+  }
+}

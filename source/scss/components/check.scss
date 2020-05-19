@@ -84,3 +84,13 @@
     transform: rotate(45deg);
   }
 }
+
+@media (min-width: 1024px) {
+  .check {
+    width: 21%;
+  }
+
+  .check__container {
+    margin-bottom: 0;
+  }
+}
