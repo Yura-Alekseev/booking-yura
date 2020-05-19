@@ -3,6 +3,13 @@
   top: -8px;
 }
 
-.form-contacts  .form-section__item:last-child {
-  margin-bottom: 0;
+@media (min-width: 768px) {
+  .form-contacts .form-section__title {
+    flex-direction: row;
+  }
+
+  .form-contacts .form-section__title:after {
+    left: 555px;
+    top: 4px;
+  }
 }

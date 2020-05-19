@@ -57,3 +57,20 @@
   background: var(--x-color-green);
   border-radius: 50%;
 }
+
+@media (min-width: 768px) {
+  .radio__container {
+    font-size: 20px;
+  }
+
+  .radio__box {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
+
+  .radio__box:after {
+    width: 18px;
+    height: 18px;
+  }
+}

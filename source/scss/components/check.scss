@@ -55,3 +55,32 @@
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+@media (min-width: 768px) {
+  .check {
+    width: 44%;
+  }
+
+  .check__container {
+    margin-bottom: 32px;
+    font-size: 20px;
+  }
+
+  .check__box {
+    width: 40px;
+    height: 40px;
+    margin-right: 17px;
+  }
+
+  .check__box:after {
+    left: 15px;
+    top: 6px;
+    width: 9px;
+    height: 20px;
+    border: solid var(--palette-bg-tertiary);
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}

@@ -1,3 +1,7 @@
+.form-submit {
+  margin-bottom: 35px;
+}
+
 .form-submit .button {
   margin-bottom: 20px;
 }
@@ -5,8 +9,31 @@
 .form-submit__title {
   width: 100%;
   text-align: center;
-  margin-bottom: 35px;
   font-family: var(--font-family-secondary);
   font-size: 14px;
   color: var(--text-color-secondary);
+}
+
+@media (min-width: 768px) {
+  .form-submit {
+    margin-bottom: 70px;
+  }
+  .form-submit .form-section__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .form-submit .button {
+    width: 44%;
+    height: 52px;
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+  .form-submit__title {
+    width: 44%;
+    text-align: left;
+    font-size: 16px;
+  }
 }

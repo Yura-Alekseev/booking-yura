@@ -14,3 +14,26 @@
   border-top: 1px solid #ededed;
   border-bottom: 1px solid #ededed;
 }
+
+@media (min-width: 768px) {
+  .form-profile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .form-profile__data {
+    margin-bottom: 72px;
+  }
+
+  .form-profile__type {
+    width: 100%;
+    padding: 0;
+    border: none;
+  }
+
+  .form-profile__type .form-section__wrapper {
+    border: 1px solid #ededed;
+    padding: 11px 27px 24px;
+  }
+}
