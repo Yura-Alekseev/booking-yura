@@ -90,6 +90,14 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .catalog .contacts__main,
+  .form-page .contacts__main {
+    padding: 65px 0;
+    width: 100%;
+  }
+}
+
 @media (min-width: 1400px) {
   .contacts {
     width: 100vw;
@@ -99,7 +107,9 @@
     align-items: flex-start;
   }
 
-  .contacts__main {
+  .contacts__main,
+  .catalog .contacts__main,
+  .form-page .contacts__main {
     z-index: 20;
     padding: 65px 75px;
     width: 570px;
